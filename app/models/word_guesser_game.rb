@@ -41,7 +41,7 @@ class WordGuesserGame
   def self.get_random_word
     require 'uri'
     require 'net/http'
-    uri = URI('http://randomword.saasbook.info/RandomWord')
+    uri = URI('https://esaas-randomword.onrender.com/RandomWord')
     Net::HTTP.post_form(uri, {}).body
   end
 end

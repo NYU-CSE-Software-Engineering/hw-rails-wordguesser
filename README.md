@@ -1,6 +1,6 @@
 # CHIP 4.6: WordGuesser on Rails
 
-In a [previous assignment](https://github.com/saasbook/hw-sinatra-saas-wordguesser) you created a simple Web app that plays the Wordguesser game.
+In a [previous assignment](https://github.com/NYU-CSE-Software-Engineering/hw-sinatra-saas-wordguesser) you created a simple Web app that plays the Wordguesser game.
 
 More specifically:
 
@@ -34,22 +34,15 @@ Understand the differences between how Rails and Sinatra handle various aspects 
 
 Like substantially all Rails apps, you can get this one running by doing these steps:
 
-1. Clone or fork the [repo](https://github.com/saasbook/hw-rails-wordguesser)
+1. Clone or fork the [repo](https://github.com/NYU-CSE-Software-Engineering/hw-rails-wordguesser)
 
 2. Change into the app's root directory `hw-rails-wordguesser`
 
 3. Run `bundle install --without production`
 
-4. | Local Development                      	| Codio                                                     	|
-    |----------------------------------------	|-----------------------------------------------------------	|
-    | Run `rails server` to start the server 	| Run <br>`rails server -b 0.0.0.0`<br> to start the server 	|
-
-### To view your site in Codio
-Use the Preview button that says "Project Index" in the top tool bar. Click the drop down and select "Box URL"
-
-![.guides/img/BoxURLpreview](https://global.codio.com/content/BoxURLpreview.png)
-
-For subsequent previews, you will not need to press the drop down -- your button should now read "Box URL".
+4. | Local Development                      	|
+    |----------------------------------------	|
+    | Run `rails server` to start the server 	|
 
 **Q1.1.**  What is the goal of running `bundle install`?
 

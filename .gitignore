@@ -2,6 +2,8 @@
 # That could be included by various Rails dependencies
 # This file is maintained by GitHub: https://github.com/github/gitignore
 
+.idea/* 
+
 *.rbc
 capybara-*.html
 .rspec
