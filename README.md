@@ -102,3 +102,6 @@ The Cucumber scenarios and step definitions (everything under `features/`, inclu
 Verify the Cucumber scenarios run and pass by running `rake cucumber`.
 
 **Q5.1.** What is a qualitative explanation for why the Cucumber scenarios and step definitions didn't need to be modified at all to work equally well with the Sinatra or Rails versions of the app?
+
+## 6. Finally...
+As a follow-up exercise (and part of this CHIP), don't forget to complete the quiz in Gradescope. You can find it linked in the Brightspace assignment page for this CHIP.
