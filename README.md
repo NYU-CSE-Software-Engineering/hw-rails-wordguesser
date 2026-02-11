@@ -30,7 +30,7 @@ Understand the differences between how Rails and Sinatra handle various aspects 
 
 ## 1. Run the App
 
-**NOTE: You may find these [Rails guides](http://guides.rubyonrails.org/v4.2/) and the [Rails reference documentation](http://api.rubyonrails.org/v4.2.9/) helpful to have on hand.**
+**NOTE: You may find these [Rails guides](http://guides.rubyonrails.org/) and the [Rails reference documentation](http://api.rubyonrails.org) helpful to have on hand.**
 
 Like substantially all Rails apps, you can get this one running by doing these steps:
 
@@ -38,15 +38,17 @@ Like substantially all Rails apps, you can get this one running by doing these s
 
 2. Change into the app's root directory `hw-rails-wordguesser`
 
-3. Run `bundle install --without production`
+3. Build and start your Docker container using the provided `Dockerfile`.
 
-4. | Local Development                      	|
-    |----------------------------------------	|
-    | Run `rails server` to start the server 	|
+4. Run `bundle config set without 'production'` inside of the running Docker container. 
+
+5. Run `bundle install` inside of the running Docker container.
+
+6. Start the server by doing `rails server -b 0.0.0.0` in the running Docker container.
 
 **Q1.1.**  What is the goal of running `bundle install`?
 
-**Q1.2.**  Why is it good practice to specify `--without production` when running  it on your development computer?
+**Q1.2.**  Why is it good practice to specify `bundle config set without 'production'` when running it on your development computer?
 
 **Q1.3.**
 (For most Rails apps you'd also have to create and seed the development database, but like the Sinatra app, this app doesn't use a database at all.)
