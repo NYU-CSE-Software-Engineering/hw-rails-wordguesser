@@ -1,6 +1,6 @@
 # CHIP 4.6: WordGuesser on Rails
 
-In a [previous assignment](https://github.com/saasbook/hw-sinatra-saas-wordguesser) you created a simple Web app that plays the Wordguesser game.
+In a [previous assignment](https://github.com/NYU-CSE-Software-Engineering/hw-sinatra-saas-wordguesser) you created a simple Web app that plays the Wordguesser game.
 
 More specifically:
 
@@ -30,30 +30,25 @@ Understand the differences between how Rails and Sinatra handle various aspects 
 
 ## 1. Run the App
 
-**NOTE: You may find these [Rails guides](http://guides.rubyonrails.org/v4.2/) and the [Rails reference documentation](http://api.rubyonrails.org/v4.2.9/) helpful to have on hand.**
+**NOTE: You may find these [Rails guides](http://guides.rubyonrails.org/) and the [Rails reference documentation](http://api.rubyonrails.org) helpful to have on hand.**
 
 Like substantially all Rails apps, you can get this one running by doing these steps:
 
-1. Clone or fork the [repo](https://github.com/saasbook/hw-rails-wordguesser)
+1. Clone or fork the [repo](https://github.com/NYU-CSE-Software-Engineering/hw-rails-wordguesser)
 
 2. Change into the app's root directory `hw-rails-wordguesser`
 
-3. Run `bundle install --without production`
+3. Build and start your Docker container using the provided `Dockerfile`.
 
-4. | Local Development                      	| Codio                                                     	|
-    |----------------------------------------	|-----------------------------------------------------------	|
-    | Run `rails server` to start the server 	| Run <br>`rails server -b 0.0.0.0`<br> to start the server 	|
+4. Run `bundle config set without 'production'` inside of the running Docker container. 
 
-### To view your site in Codio
-Use the Preview button that says "Project Index" in the top tool bar. Click the drop down and select "Box URL"
+5. Run `bundle install` inside of the running Docker container.
 
-![.guides/img/BoxURLpreview](https://global.codio.com/content/BoxURLpreview.png)
-
-For subsequent previews, you will not need to press the drop down -- your button should now read "Box URL".
+6. Start the server by doing `rails server -b 0.0.0.0` in the running Docker container.
 
 **Q1.1.**  What is the goal of running `bundle install`?
 
-**Q1.2.**  Why is it good practice to specify `--without production` when running  it on your development computer?
+**Q1.2.**  Why is it good practice to specify `bundle config set without 'production'` when running it on your development computer?
 
 **Q1.3.**
 (For most Rails apps you'd also have to create and seed the development database, but like the Sinatra app, this app doesn't use a database at all.)

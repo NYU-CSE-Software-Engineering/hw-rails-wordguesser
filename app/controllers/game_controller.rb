@@ -40,7 +40,7 @@ class GameController < ApplicationController
     @game = WordGuesserGame.new('')
     return if session[:game].blank?
 
-    @game = YAML.load(session[:game])
+    @game = YAML.unsafe_load(session[:game])
   end
 
   def store_game_in_session
